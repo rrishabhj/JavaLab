@@ -13,7 +13,7 @@ import java.util.StringTokenizer;
  */
 public class Exp8A {
     public static void main(String[] args) {
-        StringTokenizer st = new StringTokenizer("my name is khan"," ");  
+        StringTokenizer st = new StringTokenizer("my name is jindal"," ");  
         
         int count=st.countTokens();
         System.out.println("no. of times nextToken method can be called:"+count);
@@ -22,7 +22,7 @@ public class Exp8A {
         System.out.println(st.nextToken());  
      }
         // creating string tokenizer with delimeter
-         StringTokenizer st2 = new StringTokenizer("Come/to/learn");
+         StringTokenizer st2 = new StringTokenizer("keep/moving/forward");
       
          // checking next token
         System.out.println("Next token is : " + st2.nextToken("/"));
