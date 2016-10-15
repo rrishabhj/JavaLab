@@ -11,11 +11,28 @@ package javalab;
  */
 public class JavaLab {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        if(!args.toString().isEmpty()){
+         System.out.println("enter arguments at command line");
+         
+        }else{
+           
+            System.out.println("Command line arguments are");
+        
+        
+        for(String str:args){
+            System.out.println(str);
+        }
+        
+        System.out.println("Converting arguments into uppercase");
+        for(String str:args){
+            System.out.println(str.toUpperCase());
+        }
+        
+        
+    }
+
     }
     
 }

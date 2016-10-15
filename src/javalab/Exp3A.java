@@ -1,4 +1,4 @@
-/*
+/*7=
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -40,7 +40,9 @@ public class Exp3A {
         System.out.println("Adding box 1 to Box 2");
         Box box3=box1.addBox(box2);
         System.out.println(box3.toString());
+        System.out.println("Display all boxes");
         
+        Box.displayBoxes(box1,box2);
     }
     
 }
@@ -87,7 +89,7 @@ class Box{
         return length*breadth*height;
     }
     
-    //using method to take and return arguments PART (C)
+    //method to take and return arguments as objects PART (C)
     public Box addBox(Box box2){
         
         float len=box2.getLength()+this.length;
@@ -101,6 +103,16 @@ class Box{
     public String toString() {
         return "Length:"+length+" Breadth:"+breadth
                 + " Height:"+height; //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    // method to demonstrate varargs
+    public static void displayBoxes(Box...arg){
+        int i=1;
+        for(Box box:arg){
+            System.out.println("Box:"+i);
+            System.out.println(box.toString());
+            i++;
+        }
     }
     
     
